@@ -1,0 +1,20 @@
+{
+    "name": "vanilla-rough-notation",
+    "version": "0.1.0",
+    "description": "A vanilla implementation of the Rough Notation library",
+    "main": "index.js",
+    "files": [
+        "*.js"
+    ],
+    "scripts": {
+        "start": "es-dev-server --app-index index.html --node-resolve --watch --open"
+    },
+    "author": "Matsuuu",
+    "license": "MIT",
+    "devDependencies": {
+        "es-dev-server": "^1.54.0"
+    },
+    "dependencies": {
+        "rough-notation": "^0.2.0"
+    }
+}
