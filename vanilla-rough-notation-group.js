@@ -22,7 +22,7 @@ export default class VanillaRoughNotationGroup extends HTMLElement {
         this.annotationElements = this.shadowRoot
             .querySelector('slot')
             .assignedNodes()
-            .filter((node) => node.nodeName === 'VANILLA-ROUGH-NOTATION');
+            .filter((node) => node.nodeName === 'ROUGH-NOTATION');
 
         if (this.showOnLoad) {
             this.show();
@@ -41,6 +41,6 @@ export default class VanillaRoughNotationGroup extends HTMLElement {
     }
 }
 
-if (!customElements.get('vanilla-rough-notation-group')) {
-    customElements.define('vanilla-rough-notation-group', VanillaRoughNotationGroup);
+if (!customElements.get('rough-notation-group')) {
+    customElements.define('rough-notation-group', VanillaRoughNotationGroup);
 }

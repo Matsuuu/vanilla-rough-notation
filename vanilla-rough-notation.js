@@ -78,6 +78,6 @@ export default class VanillaRoughNotation extends HTMLElement {
     }
 }
 
-if (!customElements.get('vanilla-rough-notation')) {
-    customElements.define('vanilla-rough-notation', VanillaRoughNotation);
+if (!customElements.get('rough-notation')) {
+    customElements.define('rough-notation', VanillaRoughNotation);
 }

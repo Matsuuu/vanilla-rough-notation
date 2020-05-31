@@ -15,45 +15,45 @@
         </style>
     </head>
     <body>
-        <vanilla-rough-notation showOnLoad type="highlight" color="#FF6d00">
+        <rough-notation showOnLoad type="highlight" color="#FF6d00">
             <h2>vanilla Rough Notation</h2>
-        </vanilla-rough-notation>
-        <vanilla-rough-notation showOnLoad>
+        </rough-notation>
+        <rough-notation showOnLoad>
             <p>
                 This is a small wrapper for the coolest of js libraries: Rough Notation
             </p>
-        </vanilla-rough-notation>
+        </rough-notation>
 
         <p>
             Animations are displayed automatically when the flag
-            <vanilla-rough-notation showOnLoad color="green"><span>showOnLoad</span></vanilla-rough-notation>
+            <rough-notation showOnLoad color="green"><span>showOnLoad</span></rough-notation>
             is set
         </p>
 
-        <vanilla-rough-notation id="show-on-button" type="box" strokeWidth="3">
+        <rough-notation id="show-on-button" type="box" strokeWidth="3">
             <p>
                 They can also be launched programmatically by calling the
-                <vanilla-rough-notation showOnLoad type="box" color="blue"><span>show()</span></vanilla-rough-notation>
+                <rough-notation showOnLoad type="box" color="blue"><span>show()</span></rough-notation>
                 method.
             </p>
-        </vanilla-rough-notation>
+        </rough-notation>
         <button onclick="document.querySelector('#show-on-button').show()">
             show()
         </button>
 
-        <vanilla-rough-notation-group id="group-to-show">
-            <vanilla-rough-notation type="highlight" color="lightyellow" order="3">
+        <rough-notation-group id="group-to-show">
+            <rough-notation type="highlight" color="lightyellow" order="3">
                 <h2>Rough notation group</h2>
-            </vanilla-rough-notation>
+            </rough-notation>
 
-            <vanilla-rough-notation type="underline" color="green" order="1">
+            <rough-notation type="underline" color="green" order="1">
                 <p>By wrapping multiple rough notation elements into a group,</p>
-            </vanilla-rough-notation>
+            </rough-notation>
 
-            <vanilla-rough-notation order="2">
+            <rough-notation order="2">
                 <p>you can show them in animating in order</p>
-            </vanilla-rough-notation>
-        </vanilla-rough-notation-group>
+            </rough-notation>
+        </rough-notation-group>
 
         <button onclick="document.querySelector('#group-to-show').show()">
             group.show()
