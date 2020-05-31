@@ -6,31 +6,35 @@ A Vanilla Web Component port of the popular [Rough Notation](https://github.com/
 
 ### Usage
 
+```js
+import 'vanilla-rough-notation';
+```
+
 ```html
-<vanilla-rough-notation showOnLoad type="highlight" color="#FF6d00">
+<rough-notation showOnLoad type="highlight" color="#FF6d00">
     <h2>WC Rough Notation</h2>
-</vanilla-rough-notation>
+</rough-notation>
 ```
 
 ##### Groups
 
 ```html
-<vanilla-rough-notation-group id="group-to-show">
-    <vanilla-rough-notation type="highlight" color="lightyellow" order="3">
+<rough-notation-group id="group-to-show">
+    <rough-notation type="highlight" color="lightyellow" order="3">
         <h2>Rough notation group</h2>
-    </vanilla-rough-notation>
+    </rough-notation>
 
-    <vanilla-rough-notation type="underline" color="green" order="1">
+    <rough-notation type="underline" color="green" order="1">
         <p>By wrapping multiple rough notation elements into a group,</p>
-    </vanilla-rough-notation>
+    </rough-notation>
 
-    <vanilla-rough-notation order="2">
+    <rough-notation order="2">
         <p>you can show them in animating in order</p>
-    </vanilla-rough-notation>
-</vanilla-rough-notation-group>
+    </rough-notation>
+</rough-notation-group>
 ```
 
-## vanilla-rough-notation
+## rough-notation
 
 ### Properties
 
@@ -56,7 +60,7 @@ A Vanilla Web Component port of the popular [Rough Notation](https://github.com/
 | `remove`    | `(): void`    |
 | `show`      | `(): void`    |
 
-## vanilla-rough-notation-group
+## rough-notation-group
 
 ### Properties
 
