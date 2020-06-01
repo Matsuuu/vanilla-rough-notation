@@ -4,6 +4,8 @@ A Vanilla Web Component port of the popular [Rough Notation](https://github.com/
 
 [CodeSandbox](https://codesandbox.io/embed/dark-tdd-nkvbl?fontsize=14&hidenavigation=1&theme=dark)
 
+[Demo page, if CodeSandbox is not working](https://matsuuu.github.io/vanilla-rough-notation/)
+
 ### Usage
 
 ```js
