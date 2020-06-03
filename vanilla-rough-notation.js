@@ -53,6 +53,7 @@ export default class VanillaRoughNotation extends HTMLElement {
                 this.annotation.show();
             }
         });
+        this.append(window.__rough_notation_keyframe_styles);
     }
 
     isShowing() {
