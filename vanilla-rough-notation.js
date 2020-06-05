@@ -49,11 +49,15 @@ export default class VanillaRoughNotation extends HTMLElement {
                 strokeWidth: this.strokeWidth,
                 padding: this.padding,
             });
+        });
+        // Clone the style element from the windows styles to shadow dom.
+        this.append(window.__rough_notation_keyframe_styles.cloneNode(true));
+        // Give the shadow dom time to realise the style element
+        setTimeout(() => {
             if (this.showOnLoad) {
                 this.annotation.show();
             }
-        });
-        this.append(window.__rough_notation_keyframe_styles.cloneNode(true));
+        }, 50);
     }
 
     isShowing() {
