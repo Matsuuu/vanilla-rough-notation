@@ -8,6 +8,8 @@ A Vanilla Web Component port of the popular [Rough Notation](https://github.com/
 
 [Demo page, if CodeSandbox is not working](https://matsuuu.github.io/vanilla-rough-notation/)
 
+For more documentation about animation types and more, visit the [official repo](https://github.com/pshihn/rough-notation)
+
 ### Usage
 
 ```js
@@ -54,6 +56,8 @@ import 'vanilla-rough-notation';
 | `showOnLoad`        | `showOnLoad`        | `boolean`                      | false          |
 | `strokeWidth`       | `strokeWidth`       | `number`                       | 1              |
 | `type`              | `type`              | `RoughAnnotationType`          | "underline"    |
+| `multiline`         | `multiline`         | `boolean`                      | true           |
+| `brackets`          | `brackets`          | `String | Array<String>`       | "right"        |
 
 ### Methods
 

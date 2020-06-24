@@ -1,6 +1,6 @@
 {
     "name": "vanilla-rough-notation",
-    "version": "0.2.8",
+    "version": "0.4.0",
     "description": "A vanilla implementation of the Rough Notation library",
     "main": "index.js",
     "module": "index.js",
@@ -17,6 +17,6 @@
         "es-dev-server": "^1.54.0"
     },
     "dependencies": {
-        "rough-notation": "^0.2.0"
+        "rough-notation": "^0.4.0"
     }
 }

@@ -12,6 +12,8 @@ export default class VanillaRoughNotation extends HTMLElement {
         this.padding = 5;
         this.showOnLoad = false;
         this.order = 0;
+        this.brackets = 'right';
+        this.multiline = true;
 
         this.annotation = null;
     }
@@ -26,6 +28,22 @@ export default class VanillaRoughNotation extends HTMLElement {
         this.padding = this.getAttribute('padding') || this.padding;
         this.showOnLoad = this.hasAttribute('showOnLoad');
         this.order = this.getAttribute('order') || this.order;
+        this.multiline = this.hasAttribute('multiline') ? this.getAttribute('multiline') === 'true' : this.multiline;
+        this.brackets = this.getBrackets();
+    }
+
+    /**
+     * Passing arrays into web components as attributes is a bit
+     * yucky but we'll have to work with that so we have a smooth experience.
+     *
+     * JSON.parse expects the elements to be quoted with double quotes
+     * */
+    getBrackets() {
+        let brackets = this.getAttribute('brackets') || this.brackets;
+        if (brackets.includes('[')) {
+            brackets = JSON.parse(brackets.replace(/\'/g, '"'));
+        }
+        return brackets;
     }
 
     connectedCallback() {
@@ -48,10 +66,12 @@ export default class VanillaRoughNotation extends HTMLElement {
                 color: this.color,
                 strokeWidth: this.strokeWidth,
                 padding: this.padding,
+                brackets: this.brackets,
+                multiline: this.multiline,
             });
         });
         // Clone the style element from the windows styles to shadow dom.
-        this.append(window.__rough_notation_keyframe_styles.cloneNode(true));
+        this.append(window.__rno_kf_s.cloneNode(true));
         // Give the shadow dom time to realise the style element
         setTimeout(() => {
             if (this.showOnLoad) {
