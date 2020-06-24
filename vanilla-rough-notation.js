@@ -14,6 +14,7 @@ export default class VanillaRoughNotation extends HTMLElement {
         this.order = 0;
         this.brackets = 'right';
         this.multiline = true;
+        this.iterations = 2;
 
         this.annotation = null;
     }
@@ -30,6 +31,7 @@ export default class VanillaRoughNotation extends HTMLElement {
         this.order = this.getAttribute('order') || this.order;
         this.multiline = this.hasAttribute('multiline') ? this.getAttribute('multiline') === 'true' : this.multiline;
         this.brackets = this.getBrackets();
+        this.iterations = this.getAttribute('iterations') || this.iterations;
     }
 
     /**
@@ -68,6 +70,7 @@ export default class VanillaRoughNotation extends HTMLElement {
                 padding: this.padding,
                 brackets: this.brackets,
                 multiline: this.multiline,
+                iterations: this.iterations,
             });
         });
         // Clone the style element from the windows styles to shadow dom.
