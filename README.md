@@ -58,6 +58,7 @@ import 'vanilla-rough-notation';
 | `type`              | `type`              | `RoughAnnotationType`          | "underline"    |
 | `multiline`         | `multiline`         | `boolean`                      | true           |
 | `brackets`          | `brackets`          | `String | Array<String>`       | "right"        |
+| `iterations`        | `iterations`        | `number`                       | 2              |
 
 ### Methods
 
