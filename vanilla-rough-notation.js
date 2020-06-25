@@ -6,7 +6,6 @@ export default class VanillaRoughNotation extends HTMLElement {
         this.type = 'underline';
         this.animation = true;
         this.animationDuration = 800;
-        this.animationDelay = 0;
         this.color = 'currentColor';
         this.strokeWidth = 1;
         this.padding = 5;
@@ -23,7 +22,6 @@ export default class VanillaRoughNotation extends HTMLElement {
         this.type = this.getAttribute('type') || this.type;
         this.animation = this.hasAttribute('animation') ? this.getAttribute('animation') === 'true' : this.animation;
         this.animationDuration = this.getAttribute('animationDuration') || this.animationDuration;
-        this.animationDelay = this.getAttribute('animationDelay') || this.animationDelay;
         this.color = this.getAttribute('color') || this.color;
         this.strokeWidth = this.getAttribute('strokeWidth') || this.strokeWidth;
         this.padding = this.getAttribute('padding') || this.padding;
@@ -64,7 +62,6 @@ export default class VanillaRoughNotation extends HTMLElement {
                 type: this.type,
                 animate: this.animate,
                 animationDuration: this.animationDuration,
-                animationDelay: this.animationDelay,
                 color: this.color,
                 strokeWidth: this.strokeWidth,
                 padding: this.padding,

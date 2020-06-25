@@ -46,7 +46,6 @@ import 'vanilla-rough-notation';
 
 | Property            | Attribute           | Type                           | Default        |
 | ------------------- | ------------------- | ------------------------------ | -------------- |
-| `animationDelay`    | `animationDelay`    | `number`                       | 0              |
 | `animationDuration` | `animationDuration` | `number`                       | 800            |
 | `annotation`        | `annotation`        | `RoughAnnotation \| undefined` |                |
 | `color`             | `color`             | `string`                       | "currentColor" |
