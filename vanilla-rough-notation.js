@@ -72,12 +72,12 @@ export default class VanillaRoughNotation extends HTMLElement {
         });
         // Clone the style element from the windows styles to shadow dom.
         this.append(window.__rno_kf_s.cloneNode(true));
-        // Give the shadow dom time to realise the style element
-        setTimeout(() => {
+
+        window.requestAnimationFrame(() => {
             if (this.showOnLoad) {
                 this.annotation.show();
             }
-        }, 50);
+        });
     }
 
     isShowing() {
