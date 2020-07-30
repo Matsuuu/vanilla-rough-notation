@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/vanilla-rough-notation.svg)](https://badge.fury.io/js/vanilla-rough-notation)
 
-A Vanilla Web Component port of the popular [Rough Notation](https://github.com/pshihn/rough-notation) libary.
+A Vanilla Web Component port of the popular [Rough Notation](https://github.com/pshihn/rough-notation) library.
 
 [CodeSandbox](https://codesandbox.io/embed/dark-tdd-nkvbl?fontsize=14&hidenavigation=1&theme=dark)
 
